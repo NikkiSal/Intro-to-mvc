@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8D4F0BB62332C18D00042EF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4F0BB52332C18D00042EF0 /* AppDelegate.swift */; };
-		8D4F0BB82332C18D00042EF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4F0BB72332C18D00042EF0 /* ViewController.swift */; };
+		8D4F0BB82332C18D00042EF0 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4F0BB72332C18D00042EF0 /* Controller.swift */; };
 		8D4F0BBB2332C18D00042EF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4F0BB92332C18D00042EF0 /* Main.storyboard */; };
 		8D4F0BBD2332C18D00042EF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4F0BBC2332C18D00042EF0 /* Assets.xcassets */; };
 		8D4F0BC02332C18D00042EF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4F0BBE2332C18D00042EF0 /* LaunchScreen.storyboard */; };
 		8D4F0BCB2332C18E00042EF0 /* intro_to_mvcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4F0BCA2332C18E00042EF0 /* intro_to_mvcTests.swift */; };
 		8D4F0BD62332C18E00042EF0 /* intro_to_mvcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4F0BD52332C18E00042EF0 /* intro_to_mvcUITests.swift */; };
+		8D4F0BE72332DCBF00042EF0 /* AppleProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4F0BE62332DCBF00042EF0 /* AppleProduct.swift */; };
+		8D4F0BE92332DF1B00042EF0 /* CustomPrettyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4F0BE82332DF1B00042EF0 /* CustomPrettyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		8D4F0BB22332C18D00042EF0 /* intro-to-mvc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intro-to-mvc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4F0BB52332C18D00042EF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D4F0BB72332C18D00042EF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D4F0BB72332C18D00042EF0 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		8D4F0BBA2332C18D00042EF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D4F0BBC2332C18D00042EF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D4F0BBF2332C18D00042EF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		8D4F0BD12332C18E00042EF0 /* intro-to-mvcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "intro-to-mvcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4F0BD52332C18E00042EF0 /* intro_to_mvcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro_to_mvcUITests.swift; sourceTree = "<group>"; };
 		8D4F0BD72332C18E00042EF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D4F0BE62332DCBF00042EF0 /* AppleProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleProduct.swift; sourceTree = "<group>"; };
+		8D4F0BE82332DF1B00042EF0 /* CustomPrettyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPrettyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		8D4F0BB42332C18D00042EF0 /* intro-to-mvc */ = {
 			isa = PBXGroup;
 			children = (
+				8D4F0BE42332C2A900042EF0 /* Model */,
+				8D4F0BE52332C2B700042EF0 /* View */,
+				8D4F0BE32332C28A00042EF0 /* Controller */,
 				8D4F0BB52332C18D00042EF0 /* AppDelegate.swift */,
-				8D4F0BB72332C18D00042EF0 /* ViewController.swift */,
 				8D4F0BB92332C18D00042EF0 /* Main.storyboard */,
 				8D4F0BBC2332C18D00042EF0 /* Assets.xcassets */,
 				8D4F0BBE2332C18D00042EF0 /* LaunchScreen.storyboard */,
@@ -123,6 +129,30 @@
 				8D4F0BD72332C18E00042EF0 /* Info.plist */,
 			);
 			path = "intro-to-mvcUITests";
+			sourceTree = "<group>";
+		};
+		8D4F0BE32332C28A00042EF0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D4F0BB72332C18D00042EF0 /* Controller.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8D4F0BE42332C2A900042EF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D4F0BE62332DCBF00042EF0 /* AppleProduct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D4F0BE52332C2B700042EF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D4F0BE82332DF1B00042EF0 /* CustomPrettyView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D4F0BB82332C18D00042EF0 /* ViewController.swift in Sources */,
+				8D4F0BE72332DCBF00042EF0 /* AppleProduct.swift in Sources */,
+				8D4F0BB82332C18D00042EF0 /* Controller.swift in Sources */,
 				8D4F0BB62332C18D00042EF0 /* AppDelegate.swift in Sources */,
+				8D4F0BE92332DF1B00042EF0 /* CustomPrettyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
